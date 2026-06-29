@@ -1,0 +1,54 @@
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container{
+    background-color: hsl(0, 0%, 95%);
+}
+.search{
+display: flex;
+justify-content: space-around;
+padding: 30px;    
+}
+.search input{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+}
+.right select{
+    background-color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.countries{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 35px;
+}
+.country{
+    background-color: white;
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px;
+}
+.country img{
+    width: 100%;
+    padding: 0px auto;
+}
+@media (max-width:750px){
+    .search{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .countries{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
